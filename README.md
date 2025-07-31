@@ -45,7 +45,7 @@ There are 2 executors in Blur.
 | ------------- | ---- | ----------------------------------------------------- | ------------ |
 | `BlurType`   | str  | Type of blur: `"Gaussian"`, `"Average"`, `"Median"`, `"Bilateral"` | `"Gaussian"` |
 | `KernelSize` | int  | Size of the kernel (must be odd) (<52)                 | `25`          |
-<br><br>
+
 ## Screenshots
 1   .  ImageFocused with **BlurType:** Average & **KernelSize:** 51 
 <br><br>
