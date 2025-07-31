@@ -1,8 +1,5 @@
 import os
-import cv2
 import sys
-import math
-import numpy as np
 
 sys.path.append(os.path.join(os.path.dirname(__file__), '../../../../'))
 
