@@ -1,7 +1,5 @@
 import os
-import cv2
 import sys
-import numpy as np
 
 sys.path.append(os.path.join(os.path.dirname(__file__), '../../../../'))
 
@@ -11,6 +9,9 @@ from sdks.novavision.src.base.component import Component
 from components.Blux.src.utils.response import build_response_imageFocused
 from components.Blux.src.models.PackageModel import PackageModel
 from components.Blux.src.utils.utils import blurring_gaussian, blurring_average, blurring_median, blurring_bilateral
+from sdks.novavision.src.base.logger import LoggerManager
+
+logger = LoggerManager()
 
 
 class ImageFocused(Component):
@@ -20,7 +21,11 @@ class ImageFocused(Component):
 
     def __init__(self, request, bootstrap):
         super().__init__(request, bootstrap)
-        self.request.model = PackageModel(**(self.request.data))
+        try:
+            self.request.model = PackageModel(**(self.request.data))
+        except Exception as e:
+            logger.error(f"❌ KernelSize must be odd number !! ")
+            raise ValueError(f"PackageModel Validation Error")
         self.blur_type = self.request.get_param("BlurType")
         self.load_parameters()
         self.image = self.request.get_param("inputImage")
