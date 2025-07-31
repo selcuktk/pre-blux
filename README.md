@@ -57,7 +57,7 @@ There are 2 executors in Blur.
 <br><br>
 ## Important Notes
 
-- All the Blur functions including **Bilateral** filter are added into this package considering this [Roboflow Article: Image Blur Workflow](https://inference.roboflow.com/workflows/blocks/image_blur/). However it does not work well comparing other methods. Despite this, it was kept in the package.
+- All the Blur functions including **Bilateral** filter are added into this package considering this [Roboflow Article: Image Blur Workflow](https://inference.roboflow.com/workflows/blocks/image_blur/). However Bilateral Filter does not work well for blurring compared to other methods. Despite this, it was kept in the package.
 
 - It is essential **Kernel Size** to be odd number for some blur methods. To keep system simple, a validator and a logger are added to the system considering the users enter an even number for kernel size. The system gives the following warning message in this situation.
 <img width="765" height="45" alt="kernel_log" src="https://github.com/user-attachments/assets/21ebb7e2-3917-43c0-9043-9a87f07b61e6" />
