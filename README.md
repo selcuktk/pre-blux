@@ -1,8 +1,21 @@
 
-<img width="740" height="198" alt="novavision" src="https://github.com/user-attachments/assets/6a38785a-807c-4d5c-b70d-d95050288e53" />
-<br><br>
+<p align="left">
+  <img width="740" height="198" alt="novavision" src="https://github.com/user-attachments/assets/6a38785a-807c-4d5c-b70d-d95050288e53" />
+</p>
 
-![blur](https://github.com/user-attachments/assets/4c932c6f-748a-4549-992c-d44f1082c21e)
+<p align="left">
+  <img src="https://img.shields.io/badge/language-Python-blue?logo=python" />
+  <img src="https://img.shields.io/badge/containerized-Docker-blue?logo=docker" />
+  <img src="https://img.shields.io/badge/env-WSL-lightgrey?logo=windows" />
+  <img src="https://img.shields.io/badge/service-Redis-red?logo=redis" />
+  <img src="https://img.shields.io/badge/library-OpenCV-green?logo=opencv" />
+  <img src="https://img.shields.io/github/last-commit/selcuktk/pre-blux?style=flat&logo=github" />
+  <img src="https://img.shields.io/github/license/selcuktk/pre-blux?style=flat&logo=github" />
+</p>
+
+<p align="left">
+  <img src="https://github.com/user-attachments/assets/4c932c6f-748a-4549-992c-d44f1082c21e" />
+</p>
 
 The Blur Component is a configurable image preprocessing module designed to apply various types of blurring effects to images. 
 ## Build with
