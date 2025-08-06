@@ -16,7 +16,7 @@
   <img width="790" height="150" alt="Package_Name" src="https://github.com/user-attachments/assets/644be916-a496-4651-978c-d02e7a9fd91e" />
 </p>
 
-
+## Description
 The {Package_Name}  is a configurable image preprocessing module designed to apply various types of blurring effects to images. 
 ## Build with
 - OpenCV
