@@ -12,14 +12,12 @@
   <img src="https://img.shields.io/badge/library-OpenCV-green?logo=opencv" />
 </p>
 
-
 <p align="center">
   <img src="https://github.com/user-attachments/assets/4c932c6f-748a-4549-992c-d44f1082c21e" />
 </p>
 
-
-
 The Blur Component is a configurable image preprocessing module designed to apply various types of blurring effects to images. 
+
 ## Build with
 - OpenCV
 - Wsl
@@ -27,7 +25,6 @@ The Blur Component is a configurable image preprocessing module designed to appl
 <br><br>
 
 ## Features
-
 - ✅ Supports multiple blur types:
     - Gaussian Blur
     - Average Blur
@@ -37,14 +34,11 @@ The Blur Component is a configurable image preprocessing module designed to appl
 - 📦 Easily integrates with existing Novavision-ai packages 
 <br><br>
 
-
 ## General View of the Blur Package Structure
 | Executor            | Input                      | Configs                         | Outputs        |
 |---------------------|----------------------------|----------------------------------|----------------|
 | `ImageFocused`      | InputImage                 | `KernelSize`, `BlurType`     | OutputImage |
 | `DetectionFocused`  | InputImage, InputDetections| `KernelSize`,`BlurType`     | OutputImage |
-
-
 
 ## Executors
 There are 2 executors in Blur. 
@@ -52,15 +46,11 @@ There are 2 executors in Blur.
 - **ImageFocused:** Blurs the given image completely 
 - **DetectionFocused:** Blurs the detected objects on the given image 
 
-
-
 ## Inputs
 - ImageFocused takes the given image(s) from the source via InputImage
 - DetectionFocused takes the given image(s) from the source via InputImage and takes the detection list for an object from previous detection package
+
 ## Configurations
-
-
-
 | Parameter     | Type | Description                                           | Default      |
 | ------------- | ---- | ----------------------------------------------------- | ------------ |
 | `BlurType`   | str  | Type of blur: `"Gaussian"`, `"Average"`, `"Median"`, `"Bilateral"` | `"Gaussian"` |
@@ -76,14 +66,11 @@ There are two common configs for both ImageFocused and DetectionFocused.
 ## Outputs
 - ImageFocused gives the blurred image(s) via OutputImage
 - DetectionFocused gives the image(s) with blurred objects via OutputImage
+
 ## Usage
-
-
-
 1   . ImageFocused: It takes 1 input as InputImage and gives 1 output as OutputImage. Use of the ImageFocused can be seen at the image below.
 
 ![if_input](https://github.com/user-attachments/assets/b74abf1b-9c14-4a98-b876-5bd4f651e59c)
-
 
 2   . DetectionFocused: It takes 2 input as InputImage and InputDetections and gives 1 output as OutputImage. Use of the DetectionFocused can be seen at the image below.
 
@@ -91,7 +78,6 @@ There are two common configs for both ImageFocused and DetectionFocused.
 <br><br>
 
 ## Use Cases
-
 ### 📸 1. ImageFocused
 
 > **Use Case:** Full-image anonymization or stylistic effect in datasets.
@@ -104,7 +90,6 @@ You are preparing a dataset of public street view images to publish online. To p
 - **Configs:** `BlurType = "Average"`, `KernelSize = 51`  
 - **Output:** Entire image is blurred using average blur method.
 
-
 ### 🕵️ 2. DetectionFocused
 
 > **Use Case:** Selective blurring of sensitive objects such as faces, license plates, or logos.
@@ -116,13 +101,14 @@ You’ve run an object detection model on surveillance footage to detect faces. 
 - **Inputs:** `InputImage`, `InputDetections`  
 - **Configs:** `BlurType = "Gaussian"`, `KernelSize = 25`  
 - **Output:** The faces (or any detected object) are selectively blurred, rest of the image remains untouched.
-## Screenshots
+
+## Examples
 1   .  ImageFocused with **BlurType:** Average & **KernelSize:** 51 
 <br><br>
 ![if_average_51](https://github.com/user-attachments/assets/36c88595-878e-4304-89a4-bb7f16c248ec) 
 <br><br><br><br>
 
-2.  DetectionFocused with **BlurType:** Gaussian & **KernelSize:** 51
+2  .  DetectionFocused with **BlurType:** Gaussian & **KernelSize:** 51
 <br><br>
 ![df_gaussian_51](https://github.com/user-attachments/assets/ef140c6a-59f8-4b79-84fe-8633cc460037)
 <br><br>
