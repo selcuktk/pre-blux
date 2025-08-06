@@ -18,6 +18,7 @@
 
 ## Description
 The Blur Component is a configurable image preprocessing module designed to apply various types of blurring effects to images. 
+<br><br>
 
 ## Build with
 - OpenCV
@@ -60,7 +61,7 @@ There are 2 executors in Blur.
 There are two common configs for both ImageFocused and DetectionFocused. 
 1.  **BlurType:** There are 4 options to blur such as Gaussian, Average, Median and Bilateral. Functions use OpenCV fucntions to blur the given input.
 2.  **KernelSize**: It is a parameter that is used on blurring functions. Some of the functions do not work with even numbers for kernel size. To make system simple, kernel size was restricted to be odd number for all blurring methods.
-- A validator and a logger are added to the system considering if the users enter an even kernel size. The system gives the following warning message in this situation.
+    - A validator and a logger are added to the system considering if the users enter an even kernel size. The system gives the following warning message in this situation.
 
 <img width="765" height="45" alt="kernel_log" src="https://github.com/user-attachments/assets/21ebb7e2-3917-43c0-9043-9a87f07b61e6" />
 
