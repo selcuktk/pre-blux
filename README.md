@@ -16,6 +16,7 @@
   <img src="https://github.com/user-attachments/assets/4c932c6f-748a-4549-992c-d44f1082c21e" />
 </p>
 
+## Description
 The Blur Component is a configurable image preprocessing module designed to apply various types of blurring effects to images. 
 
 ## Build with
